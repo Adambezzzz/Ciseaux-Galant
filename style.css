@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Merriweather", serif;
@@ -8,7 +8,7 @@
 
 /* HEADER */
 
-header{
+header {
 
 
     position: relative;
@@ -22,88 +22,121 @@ header{
 
 
 
-    .flex{
+    .flex {
         display: flex;
         width: 85%;
         margin: auto;
         align-items: center;
         justify-content: space-between;
-        
 
-        
 
-        nav{
 
-            
 
-            
+        nav {
 
-            ul{
-                
+
+
+
+
+            ul {
+
                 display: flex;
                 list-style: none;
                 gap: 8rem;
 
-                a{
+                a {
                     text-decoration: none;
                     color: #f0f0f0;
-                    font-size: 18px
+                    font-size: 18px;
+                    position: relative;
+                    transition: 1s;
+                }
+
+                a:hover {
+                    color: #F2E49B;
+                    transform: scale(1.1);
+                }
+
+                a::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 2px;
+                    background: #F2E49B;
+                    transition: 1s;
+                }
+
+                a:hover::after {
+                    width: 100%;
+                    color: #F2E49B;
                 }
 
             }
 
         }
 
-        .btn-contato{
+        .btn-contato {
 
-            button{
+            button {
                 width: 10rem;
                 padding: 0.5rem;
                 background-color: #BF9A54;
                 border: none;
                 border-radius: 0.2rem;
+                transition: 1s;
 
-                a{
+                a {
                     text-decoration: none;
                     color: #f0f0f0;
 
                 }
 
             }
-            
+
+            button:hover {
+                transform: scale(1.05);
+            }
+
         }
 
     }
 
-    .subtitle{
+    .subtitle {
         padding: 15rem 20rem;
 
-        h2{
+        h2 {
             font-size: 52px;
             color: #BF9A54;
         }
 
-        p{
+        p {
             font-size: 18px;
             margin-top: 2rem;
             color: #f0f0f0;
         }
 
-        button{
+        button {
             margin-top: 2rem;
             width: 15rem;
             padding: 1rem;
             background-color: #BF9A54;
             border: none;
             border-radius: 0.2rem;
+            transition: 1s;
 
-            a{
+            a {
                 text-decoration: none;
                 color: #f0f0f0;
                 font-size: 18px;
                 font-weight: 600;
             }
 
+        }
+
+        button:hover {
+            transform: scale(1.05);
         }
 
     }
@@ -114,43 +147,44 @@ header{
 
 /* AJUSTES DO CARROUSEL DO BOOT */
 
-.carousel-item{
-    background-color: #BF9A54;
+.carousel-item {
+    background-color: #BF9A54;    
 
-    .servicos{
+    .servicos {
         padding: 2rem;
         background-color: #F2E49B;
         width: 80%;
         margin: auto;
 
-        .flex{
+        .flex {
             display: flex;
             justify-content: center;
             align-items: center;
-            
 
-            .txt{
+
+            .txt {
                 width: 20%;
                 color: #333;
                 margin-right: 10rem;
-                h4{
+
+                h4 {
                     font-size: 52px;
                     color: #333;
                 }
 
-                ul{
+                ul {
 
-                    li{
+                    li {
                         color: #333;
-                       font-size: 18px;
+                        font-size: 18px;
                     }
 
                 }
 
             }
 
-            .imgs{
-                padding:0.5rem ;
+            .imgs {
+                padding: 0.5rem;
                 display: flex;
                 gap: 2rem;
                 width: 50%;
@@ -168,19 +202,19 @@ header{
 
 
 /* SOBRE */
-.sobre{
+.sobre {
     padding: 2rem;
 
-    .flex{
+    .flex {
         width: 60%;
         margin: auto;
         display: flex;
 
-        .img{
+        .img {
             width: 50%;
         }
 
-        .txt{
+        .txt {
             padding: 5rem 2rem;
         }
 
@@ -192,16 +226,25 @@ header{
 
 /* IMAGES */
 
-.images{
-    .global{
+.images {
+    .global {
         width: 60%;
         margin: auto;
 
-        .flex{
+        .flex {
             display: flex;
             justify-content: center;
             gap: 0.5rem;
             padding: 0.5rem;
+
+            img{
+                transition: 1s; 
+            }
+
+            img:hover{
+                transform: scale(1.05);
+            }
+
         }
 
     }
@@ -210,45 +253,55 @@ header{
 
 /* FORM E IFRAME */
 
-.form{
+.form {
     padding: 4rem;
 
-    .flex1{
+    .flex1 {
         display: flex;
         width: 60%;
         margin: auto;
         gap: 2rem;
 
-        form{
+        form {
             text-align: center;
             width: 50%;
 
-            h2{
+            h2 {
                 font-size: 38px;
                 color: #333;
             }
 
-            .flex2{
+            .flex2 {
                 display: flex;
                 gap: 1rem;
                 margin-bottom: 2rem;
 
-                input{
+                input {
                     width: 100%;
                     text-align: center;
                     padding: 0.5rem;
-                    
+                    transition: 1s;
+
+                }
+
+                input:hover{
+                    transform: scale(1.05);
                 }
 
             }
 
-            textarea{
+            textarea {
                 resize: none;
                 width: 100%;
                 padding: 0.5rem;
+                transition: 1s;
             }
 
-            button{
+            textarea:hover{
+                transform: scale(1.05);
+            }
+
+            button {
                 width: 100%;
                 padding: 1rem;
                 margin-top: 2rem;
@@ -256,11 +309,16 @@ header{
                 color: #333;
                 border: none;
                 border-radius: 0.2rem;
+                transition: 1s;
+            }
+
+            button:hover{
+                transform: scale(1.05);
             }
 
         }
 
-        .local{
+        .local {
             margin: 0 2rem;
         }
 
@@ -270,24 +328,24 @@ header{
 
 
 /*FOOTER */
-footer{
+footer {
     background-color: black;
     padding: 2rem;
     text-align: center;
 
-    .head{
+    .head {
         width: 70%;
         text-align: center;
         margin: auto;
         color: #F2E49B;
     }
 
-    .cont{
+    .cont {
         padding: 2rem;
         width: 45%;
         margin: auto;
 
-        p{
+        p {
             font-size: 16px;
             color: #333;
             padding: 2rem;
@@ -295,19 +353,19 @@ footer{
 
     }
 
-    .links{
+    .links {
         width: 70%;
         margin: auto;
 
-        ul{
+        ul {
             display: flex;
             justify-content: center;
             gap: 2rem;
 
-            li{
+            li {
                 list-style: none;
 
-                a{
+                a {
                     color: #F2E49B;
                 }
 
@@ -318,3 +376,10 @@ footer{
     }
 
 }
+
+
+
+
+
+
+/* ANIMATIONS */

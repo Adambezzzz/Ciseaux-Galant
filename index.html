@@ -26,27 +26,27 @@
 
 <body>
 
-    <header>
+    <header id="head">
         <div class="flex">
             <div class="img">
                 <img height="85rem" src="./IMAGES/LOGO SEM FUNDO.png." alt="">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#serv">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
                 </ul>
             </nav>
             <div class="btn-contato">
-                <button><a href="#">CONTATO</a></button>
+                <button><a href="#form">CONTATO</a></button>
             </div>
         </div>
         <div class="subtitle">
             <h2>Ciseaux Galant Ciseaux </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor, sit amet consectetur adipisicing
                 elit. Repellendus ut ratione molestiae. elit. Debitis, tempore.</p>
-            <button><a href="#">ENTRE EM CONTATO</a></button>
+            <button><a href="#form">ENTRE EM CONTATO</a></button>
         </div>
     </header>
 
@@ -56,7 +56,7 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <section class="servicos">
+                    <section id="serv" class="servicos">
                         <div class="flex">
                             <div class="txt">
                                 <h4>Corte</h4>
@@ -123,7 +123,7 @@
             </button>
         </div>
 
-        <section class="sobre">
+        <section id="about" class="sobre">
             <div class="flex">
                 <div class="img">
                     <img height="400rem" src="IMAGES/CRISTO.jpg" alt="">
@@ -141,7 +141,7 @@
             </div>
         </section>
 
-        <section class="images">
+        <section id="imgs" class="images">
             <div class="global">
                 <div class="flex">
                     <div class="img"><img height="150rem" src="IMAGES/Roby_Salao_Beleza-3774.jpg" alt=""></div>
@@ -171,9 +171,9 @@
             </div>
         </section>
 
-        <section class="form">
+        <section id="form" class="form">
             <div class="flex1">
-                <form action="">
+                <form action="https://formspree.io/f/xovbvvnj" method="POST">
                     <h2>CONTATO</h2>
                     <div class="flex2">
                         <input type="text" name="nome" placeholder="Seu Nome" required>
