@@ -15,7 +15,7 @@ header {
     height: 50rem;
     padding: 1rem 0;
     text-align: center;
-    background-image: url(./IMAGES/Roby_Salao_Beleza-3774.jpg);
+    background-image: url(./IMAGES/fachadalojaeditada.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -230,15 +230,20 @@ header {
     .global {
         width: 60%;
         margin: auto;
+        background-color: #F2E49B;
+        
 
         .flex {
             display: flex;
             justify-content: center;
             gap: 0.5rem;
-            padding: 0.5rem;
+            padding: 1rem 2rem;
+            background-color: #F2E49B;
+
 
             img{
                 transition: 1s; 
+                width: 100%;
             }
 
             img:hover{
@@ -320,6 +325,8 @@ header {
 
         .local {
             margin: 0 2rem;
+            background-color: #BF9A54;
+            padding: 0 0 0.5rem ;
         }
 
     }
