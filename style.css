@@ -13,7 +13,6 @@ header {
 
     position: relative;
     height: 50rem;
-    padding: 1rem 0;
     text-align: center;
     background-image: url(./IMAGES/fachadalojaeditada.jpg);
     background-position: center;
@@ -23,84 +22,12 @@ header {
 
 
     .flex {
-        display: flex;
         width: 85%;
         margin: auto;
-        align-items: center;
-        justify-content: space-between;
+        text-align: center;
+        /* background-color: #f0f0f0; */
 
-
-
-
-        nav {
-
-
-
-
-
-            ul {
-
-                display: flex;
-                list-style: none;
-                gap: 8rem;
-
-                a {
-                    text-decoration: none;
-                    color: #f0f0f0;
-                    font-size: 18px;
-                    position: relative;
-                    transition: 1s;
-                }
-
-                a:hover {
-                    color: #F2E49B;
-                    transform: scale(1.1);
-                }
-
-                a::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 0%;
-                    height: 2px;
-                    background: #F2E49B;
-                    transition: 1s;
-                }
-
-                a:hover::after {
-                    width: 100%;
-                    color: #F2E49B;
-                }
-
-            }
-
-        }
-
-        .btn-contato {
-
-            button {
-                width: 10rem;
-                padding: 0.5rem;
-                background-color: #BF9A54;
-                border: none;
-                border-radius: 0.2rem;
-                transition: 1s;
-
-                a {
-                    text-decoration: none;
-                    color: #f0f0f0;
-
-                }
-
-            }
-
-            button:hover {
-                transform: scale(1.05);
-            }
-
-        }
-
+       
     }
 
     .subtitle {
