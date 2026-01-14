@@ -25,7 +25,7 @@ header {
         width: 85%;
         margin: auto;
         text-align: center;
-        /* background-color: #f0f0f0; */
+        
 
        
     }
@@ -131,6 +131,7 @@ header {
 /* SOBRE */
 .sobre {
     padding: 2rem;
+    text-align: center;
 
     .flex {
         width: 60%;
