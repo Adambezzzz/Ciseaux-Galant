@@ -39,9 +39,9 @@ header {
         }
 
         p {
-            font-size: 18px;
+            font-size: 22px;
             margin-top: 2rem;
-            color: #f0f0f0;
+            color: #fff;
         }
 
         button {
@@ -277,12 +277,12 @@ footer {
 
     .cont {
         padding: 2rem;
-        width: 45%;
+        width: 55%;
         margin: auto;
 
         p {
             font-size: 16px;
-            color: #333;
+            color: #7f7f7f;
             padding: 2rem;
         }
 
